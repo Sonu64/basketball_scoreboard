@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Basketball Scoreboard</title>
+</head>
+<body>
+
+    <center>
+    <div class="card">   
+        <main>
+            <table>
+
+
+                <tr>
+                <td colspan="2"  class="heading">
+                    <h1>SCOREBOARD</h1>
+                </td>
+                </tr>
+
+
+
+            <tr>   
+            <td>
+             <div class="teamA">
+                <p class="teamName">Team A</p>
+                <h1 id="scoreA" class="score">0</h1>
+                <section class="buttons">
+                    <button onclick="increaseScoreOfA(1)">+1</button>
+                    <button style="margin-right: 30px;margin-left: 30px;"  onclick="increaseScoreOfA(2)">+2</button>
+                    <button  onclick="increaseScoreOfA(3)">+3</button>
+                </section>
+             </div>
+            </td>
+
+            <td>
+             <div class="teamB">
+                <p class="teamName">Team B</p>
+                <h1 id="scoreB" class="score">0</h1>
+                <section class="buttons">
+                    <button onclick="increaseScoreOfB(1)">+1</button>
+                    <button style="margin-right: 30px;margin-left: 30px;" onclick="increaseScoreOfB(2)">+2</button>
+                    <button onclick="increaseScoreOfB(3)">+3</button>
+                </section>
+             </div>
+            </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="newGameSection">
+                    <button onclick="reset()">NEW GAME</button>
+                </td>
+            </tr>
+
+
+            </table>
+        </main>
+    </div>
+</center>
+</body>
+
+<script src="script.js"></script>
+</html>
